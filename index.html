@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var slideDownNav = document.querySelector('.navbar');
+            slideDownNav.classList.add('slide-down-animation');
+            var slideDownDiv = document.querySelector('.half-circle');
+            slideDownDiv.classList.add('slide-down-animation-half-circle');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            img1.classList.add('slide-left');
+            img2.classList.add('slide-right');
+        });
+   
+        
+    </script>
+
+</head>
+
+<body class="lakshya-body">
+    <div class="navbar" id="mynav">
+        <div class="responsive">
+            
+        </div>
+        <nav>
+            Attention Guys!!
+        </nav>
+    </div>
+    <div class="extended-scroll">
+        <marquee behavior="scroll" direction="left">Respected Seniors, faculty members, and my dear friends, a warm welcome to the farewell party which is planned to be organized on 28-03-2024 (Thursday). You all are welcome to attend and make it more beautiful!</marquee>
+
+    </div>
+
+    <main></main>
+
+    <script src="app.js"></script>
+    <script>
+        var countDownDate = new Date("Mar 28, 2024 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "";
+            }
+        }, 1000);
+
+   
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
