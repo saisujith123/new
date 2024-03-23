@@ -64,7 +64,7 @@ marquee{
 .half-circle {
   width: 100%;
   height: 91vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("homepage/admin-block.gif");
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("/admin-block.gif");
   background-repeat: no-repeat;
   background-position: 0%;
   box-shadow: 0 5px 10px 0 grey;
