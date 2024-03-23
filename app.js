@@ -24,7 +24,7 @@ function fetchContent(page) {
             <header class="home-page">
             <div class="half-circle">
                 <div class="half-circle-content">
-                    <img src="logos/college-logo1.png" class="logo_dep">
+                    <img src="college-logo1.png" class="logo_dep">
                     <h1 class="lakshya">Farewell Party</h1>
                     <span id="timer"></span>
                     <button id="beginButton" class="button-85" role="button">Let's Begin</button>
